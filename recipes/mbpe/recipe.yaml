@@ -1,6 +1,6 @@
 context:
   version: "0.1.1"
-  mojo_version: "=1.0.0b2"
+  mojo_version: "=1.0.0"
 
 package:
   name: mbpe
@@ -8,10 +8,10 @@ package:
 
 source:
   - git: https://github.com/ratulb/mbpe.git
-    rev: 32c748d2025e0d8716d1b550b1c56da4640fdb08
+    rev: a6ae5075a324707bd79b5e4db5ed1756811ad6cd
 
 build:
-  number: 0
+  number: 1
   script:
     - mojo precompile bpe -o ${{ PREFIX }}/lib/mojo/bpe.mojoc
     - mkdir -p ${{ PREFIX }}/share/mbpe/data
